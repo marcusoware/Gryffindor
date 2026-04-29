@@ -1,6 +1,6 @@
 """
 Build Terminal Quiz Game
-TODO
+
 
 """
 
@@ -27,7 +27,8 @@ def quiz_game():
 
     for question in python_questions:
         while True:
-            message = input (f"\n  \n{counter}: {question[0]} \n{"*"*5} OPTIONS {"*"*5}\nA: {question[1][0]} \nB: {question[1][1]} \nC: {question[1][2]} \nD: {question[1][3]}\n").strip().lower() 
+            message = input (
+                f"\n  \n{counter}: {question[0]} \n{"*"*5} OPTIONS {"*"*5}\nA: {question[1][0]} \nB: {question[1][1]} \nC: {question[1][2]} \nD: {question[1][3]}\n").strip().lower() 
             if message not in ["a","b","c","d"]:
                 print("invalid user choice ")
                 continue
@@ -64,28 +65,13 @@ def front_page():
     message = input(" \nPress '1' to start the game of '2'to exist game: \n")
     match message:
         case "1":
-            return quiz_game()
+            quiz_game()
             
         case "2": 
             return "Program Logged out ..."
         case _:
             return "invalid user input1"
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     main()
-
-
 

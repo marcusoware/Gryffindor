@@ -1,19 +1,19 @@
 
 # creating a parity function to determine if a number is even or odd:
 
-# creating a parity to take in users input:
-def parity():
-    num = int(input("choose and number : "))
-# use % 2 to check for even numbers: 
-    if num % 2 == 0:
-        print(f" Your number '{num}' is even")
-#  using % 3 to check for odd numbers:
-    elif num % 3 == 0:
-        print(f"Your number '{num}' is odd")
-    else:
-        print(f"Your number '{num}' is prime") 
+# # creating a parity to take in users input:
+# def parity():
+#     num = int(input("choose and number : "))
+# # use % 2 to check for even numbers: 
+#     if num % 2 == 0:
+#         print(f" Your number '{num}' is even")
+# #  using % 3 to check for odd numbers:
+#     elif num % 3 == 0:
+#         print(f"Your number '{num}' is odd")
+#     else:
+#         print(f"Your number '{num}' is prime") 
 
-parity()   
+# parity()   
 
 
 
@@ -32,6 +32,9 @@ def parity():
             else:
                 print(f"Your number '{num}' is prime") 
 parity()   
+
+
+
 
 
 

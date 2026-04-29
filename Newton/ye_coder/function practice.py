@@ -3,7 +3,9 @@
 1. Local Scope: Variables defined inside a function are local to that function.
 2. Enclosing Scope: Variables in the enclosing function's scope.
 3. Global Scope: Variables defined at the top level of a module or declared with 'global'.
-4. Built-in Scope: Reserved names in Python like 'print', 'len', etc.'''
+4. Built-in Scope: Reserved names in Python like 'print', 'len', etc.
+   
+'''
 
 # Local scope example
 def my_function():

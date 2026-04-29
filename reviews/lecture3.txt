@@ -1,0 +1,78 @@
+
+Hawa: 
+    you add two folders which one is your main folder.
+    I also noticed you your parity function 
+    you need a docstring withing the function to tell us 
+    what your function is doing .
+    this is for the whole class too .
+    there is a folder called gryffindor .. just delete it from your codebase and re push .
+
+
+Bengee: 
+    You actually did the assignment but the main problem was that you did not really do the second assignment .
+    One thing too . always create seperate folders and 
+    and files for each of your segments or meetings .
+    for instances you can have an assignment folder in you named folder . you can also add files in as lecture1.py lecture2.py for each assigment.
+    then have seperated lecture1 ,lecture2 and so on.
+    for the class sections.
+    using f-string is not a must if you only need a simple string .
+    you did well and i think you should add  commenting to 
+    your codebase.
+
+
+Hackman: 
+    you source code it self was good but i have a problem with your comment and and the way you use # single line comments 
+    plus make sure you properly review all the code before you push to github . """ the three strings is very disturbing at the end of your code . i know we all got other stuffs to do . but please when you are writing your code take your time.
+    petty petty mistakes .Syntax errors. please this is not the first time .
+
+
+mr.Odo Nti:
+    I noticed that you worked on the repo as usual , but the main problem is that after a break . you were meant to stop indentation so you code wll run but i guess it will never run . please before pushing any code or source code to me . test it  out yourselves.Your assignment had a small bug .
+    when a number is not even or odd does not make it a prime number . there are also composite numbers.
+
+
+Newton : 
+    When I look into your codebase i fall in love with the lines becos writing this code yourself. from the point you said you were not getting anything to now. You improvement is wonderful.Keep it up.
+    One of the greatest things i saw in you code was improvements . you have improved alot and  trust me . 
+    now i know you understand what you are doing . but 
+    there is something about how you guys comment a function
+    and where you choose to place your single line comments.
+    in all you did well.
+
+
+Ephraim:
+    is now a an advance pythonista . he builds things with his python but i also have problem with your codebase .
+    you do not need alot  , but just this much . commenting your code really well and even arrangement of the code matters.
+    in all well done.
+    now let talk about your assigment solution. 
+    you used functional programming paradigm.
+    but functions are meant to do one thing . 
+    you function was asking for user input and also checking for parity at the same time. the best design was to use the main function to ask for the input.then there is a separation of logic
+
+
+Sandra: 
+    i had a simple question about your all your codebase.
+    did you write those code yourself . Or someone assisted you .Be it a person or ai. I noticed a slight change in how you write you codes in class and the one that was in the  codebase. If you did it yourself. This is awesome.
+     i am even surprise cos it means you are also learning ahead i also have problem with your commenting and the arrangement of your codes. 
+     it runs but  they are so piled together .
+     in all well done .
+     you run your while function outside in the global scope .
+     
+     your class.py file had so many errors .like using """" instead of """ . and unfinished match statement.
+
+Mase: 
+    please i wish you follow along class at least for the most part or when we add something to the group
+    . use it . this is for everyone too. now we are far behind time . we can not keep backtracking .
+
+the rest:
+    yet to receive your push .
+    except Mase and Duncan what really really happened.
+
+Misbau:
+    we are at the 4 lecture and i have not seen one upload from you . please do you follow along with the class .
+    becos Bengee was not in class for last Monday,Tueday but he still submitted all the assignment.
+
+
+Nazafat & Doris & Esther  : 
+    just becos you were not in class does not mean you are exempted from assignment and submitting to  github.
+    that is why we are using github . you can do it at the comfort of your home. 

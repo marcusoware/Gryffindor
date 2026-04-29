@@ -24,8 +24,9 @@
 def main():
     parity()
 
+
 def parity():
-# Taking a user input
+    # Taking a user input
     try:
         num = int(input("Enter a number : "))
         if num % 2 == 0:
