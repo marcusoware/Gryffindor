@@ -1,8 +1,11 @@
-def check_parity(num):
-    if num % 2 == 0:
-        return f"even"
-    else:
-        return "odd"
-   
-print(check_parity(9))
+x = int(input("what's X? "))
+y = int(input("what is y? "))
+
+if x < y:
+    print("x is less than y")
+elif x > y:
+        print("x is greater than y")
+else:
+      print("x is equal to y")
+
 
