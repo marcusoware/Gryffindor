@@ -83,14 +83,14 @@ def user_signup():
         match password:
             case 'p':
                 password = password_generator()
-                password
+                password # type: ignore
                 print(f"Generated Password: {password} \nsave your password")
                 break
             case _:
                 if len(password) < 8:
                     continue
                 else:
-                    password
+                    password # type: ignore
                     break
 
 
