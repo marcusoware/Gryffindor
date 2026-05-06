@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+root{
+    --bg-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    min-width: 100dvh;
+    background: url('../images/closeup-programming-code-language.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+
+}
+
+nav {
+    
+    display: flex;
+    margin: 0;
+    background: hsl(232, 100, 26);
+    text-decoration: none;
+    padding: 1em 1.5em;
+    width: 100%;
+
+}
+
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 2.5em 2.5em;
+    font-size: 1.2rem;
+    align-items: center;
+    
+}
+
+nav li a{
+    display: flex;
+    text-decoration: none;
+    color: rgba(254, 192, 7);
+    border-bottom: 2px solid transparent;
+
+    
+}
+
+nav a:hover{
+    border-bottom: 2px solid rgba(254, 192, 7);;
+}
+
+nav a:hover :last-child{
+    border-bottom: none;
+}
+
+
+nav p{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 3em;
+    font-size: 1.2rem;
+    color: rgba(254, 192, 7);
+    font-weight: 500;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    padding: 0.8em 2em;
+    border-radius: 300px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgba(254, 192, 7);
+    color: white;
+
+}
+
+#btn a{
+    color: white;
+}
+
+#btn:hover{
+    background-color: hsla(45, 99%, 51%, 0.91);
+    cursor: pointer;
+    
+}
+
+#btn:active{
+    background-color: hsla(45, 99%, 51%, 0.765);
+    border-bottom: none;
+}
+
+.hero{
+    margin-top: 30px;
+    display: grid;
+   /*  grid-template-columns: 1.2fr 0.8fr; */
+   grid-template-columns: 1fr;
+    
+}
+
+.hero-left img{
+   width: clamp(200px, 25vw, 300px);
+   margin-left: 40px;
+   height: auto;
+   flex-shrink: 0;
+}
+
+.hero-left{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1em;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.hero-text{
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    white-space: nowrap;
+    margin-bottom: -1rem;
+}
+
+h1 span{
+    color: rgba(254, 192, 7);
+}
+
+h2{
+    color: white;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.p-text{
+    color: white;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    max-width: 400px;
+    text-align: center;
+    }
+
+.buttons{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 20px;
+}    
+
+#btn1{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    padding: 0.2em 1em 0.2em 1em;   
+    background-color: rgba(254, 192, 7);
+    
+}
+#btn1:hover{
+    background-color: hsla(45, 99%, 51%, 0.91);
+    cursor: pointer;
+    border-bottom: none;
+}
+
+#btn1:active{
+    background-color: hsla(45, 99%, 51%, 0.765);
+}
+
+
+#btn2{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    padding: 0.2em 1em 0.2em 1em;   
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    backdrop-filter: blur(10px);
+
+}
+
+#btn2:hover{
+    cursor: pointer;
+}
+
+
+#btn {
+    list-style: none;
+    text-decoration: none;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em;
+}
+
+.box {
+    background: rgba(30, 40, 80, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 12px;
+    padding: 1.5em;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: all 0.3s ease;
+    cursor:default;
+}
+
+/* .box-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+ */
+
+ .box-header {
+    display: flex;
+    justify-content: flex-start; /* everything stays on the left */
+    align-items: center;
+    gap: 0.8em; /* this controls the space between the icon and the text */
+    margin-bottom: 1em;
+}
+
+.box-header i {
+    color: rgba(254, 192, 7);
+    font-size: 1.3rem;
+}
+
+.box-header .box-price {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.box-content h3 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.4em;
+}
+
+.box-content p {
+    color: rgba(255, 255, 255, 0.6); /* dimmed white so it doesn't compete with the heading */
+    font-size: 0.9rem;
+}
+
+.box:hover {
+    background: rgba(40, 55, 100, 0.7); /* slightly lighter on hover */
+    border-color: rgba(254, 192, 7, 0.4); /* yellow border creeps in on hover */
+    transform: translateY(-4px); /* lifts the box up slightly */
+    transition: all 0.3s ease; /* makes everything animate smoothly */
+}

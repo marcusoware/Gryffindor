@@ -1,9 +1,25 @@
-from pil import image
-#open the image open
-image=image.open(All in This PC\Apple iPhone\Internal Storage\202308_a)
- frames=[]
-# create zoom effect frames
-        for i in range(10):
-        scale=1+(i*0.03)# zoom factor
-        
+
+
+
+
+from PIL import Image, ImageEnhance
+# Open image.
+image=Image.open("image.jpeg")
+
+frames=[]
+# create brightness animation
+for i in range(5):
+    enhancer=ImageEnhance.Brightness(image)
+    frame=enhancer.enhance(0.5+i*0.3) # change brightness
+    frames.append(frame)
+
+
+    # save as GIF
+    frames[0].save("output.gif",
+                   save_all=True,
+                   append_images=frames[1:],
+                   duration=300,
+                   loop=0
+                   )
+    print("GIF created successfully!")
                  

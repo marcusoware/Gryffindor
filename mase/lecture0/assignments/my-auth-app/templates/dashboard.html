@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <p>Atomic Systems</p>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Python Basics</a></li>
+            <li><button id="btn"><a href="/logout">Logout</a></button></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-text">
+                <h1>Welcome back, <span>{{ current_user.username }}</span></h1>
+                <p class="p-text">Pick up where you left off or explore something new.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="box">
+            <div class="box-header">
+                <i class="fa-solid fa-book"></i>
+                <span class="box-price">Python Basics</span>
+            </div>
+            <div class="box-content">
+                <p>Variables, data types, loops and functions. The foundations of everything.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <i class="fa-solid fa-code"></i>
+                <span class="box-price">Projects</span>
+            </div>
+            <div class="box-content">
+                <p>Hands on projects to put your skills into practice.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <i class="fa-solid fa-link"></i>
+                <span class="box-price">Resources</span>
+            </div>
+            <div class="box-content">
+                <p>Curated links, cheat sheets and references to help you learn faster.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

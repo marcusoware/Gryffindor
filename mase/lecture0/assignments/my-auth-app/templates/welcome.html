@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>recreation</title>
+</head>
+<body>
+    <nav>
+        <p>Welcome to PySpot</p>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/resources">Features</a></li>
+        <li><a href="/python-basics">Resources</a></li>
+        <li><button id="btn"><a href="/login">Login</a></button></li>
+    </ul>
+    </nav>
+<section class="hero">
+    <div class="hero-left">
+        <img id="logo" src="{{url_for('static', filename='images/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn-removebg-preview.png') }}" alt="Python Logo">
+        <div class="hero-text">
+            <h1>Master <span>Python</span></h1>
+                <h2>Programming</h2>
+        <p class="p-text">Learn to write clean code, automate tasks, and power up your projects with python!</p>
+       <div class="buttons">
+            <button class="btns" id="btn1"><a href="/signup">Get Started</a></button>
+            <button class="btns" id="btn2"><a href="/dashboard">View Courses</a></button>
+        </div>
+    </div>     
+    </div>
+    <!-- <div class="hero-right">
+        
+    </div> -->
+</section>
+
+<section class="info">
+  <div class="box">
+    <div class="box-header">
+        <i class="fa-solid fa-check"></i>
+        <span class="box-price">Write Clean Code</span>
+    </div> 
+    <div class="box-content">
+        <p>Understand best practices and write efficient, readable scripts.</p>
+    </div>
+
+  </div>
+  <div class="box">
+    <div class="box-header">
+        <i class="fa-solid fa-gear"></i>
+        <span class="box-price">Automate Tasks</span>
+    </div> 
+    <div class="box-content">
+        <p>Use Python to save time by automating repetitive tasks effortlessly.</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-header">
+        <i class="fa-solid fa-rocket"></i>
+        <span class="box-price">Build Awesome Projects</span>
+    </div> 
+    <div class="box-content">
+        <p>Bring your ideas to life with hands-on projects and real-world applications.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

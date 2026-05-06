@@ -446,12 +446,6 @@ print(longestPalindrome("babad"))
 #user_day=input("Enter day of the week:")
 #"get_date_from_day   (user_day)
 
-def check_day():
-    day = input("Enter a day: ")
 
-    match day :
-        case "monday":
-            print("Monday")
-        case ""    
     
 
