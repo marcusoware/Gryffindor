@@ -1,0 +1,41 @@
+{
+
+"tv":[
+    {
+        "id":1,
+        "name" : "Fish TV",
+        "logo" : "",
+        "stream" : "https://tv.localstreamgh.com/fishtv/index.m3u8",
+        "Country" : "ghana",
+        "category" : "general"
+    },
+    {
+        "id" : 2,
+        "name" : "ghanawebtv",
+        "logo" : "",
+        "stream" :"https://tv.localstreamgh.com/ghanawebtv/index.m3u8",
+        "Country": "ghana",
+        "category":"news"
+    },
+    {
+        "id" : 3,
+        "name": "ahenfietv",
+        "logo" : "",
+        "stream" : "https://tv.localstreamgh.com/ahenfietv/index.m3u8",
+        "Country":"ghana",
+        "category" : "general"
+    }
+],
+"radio":[
+    {
+        "id" : 501,
+        "name" : "radio247",
+        "logo": "",
+        "stream" : "",
+        "Country" :"ghana",
+        "category":"general"
+    }
+
+]
+
+}
