@@ -1,0 +1,17 @@
+.container{
+   
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+
+
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+.box:last-child{
+    background-color: blue;
+}
