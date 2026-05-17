@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>Sneakers</title>
+</head>
+<body class="h-screen flex flex-col overflow-hidden">
+
+    <!-- header -->
+    <header class="px-6 py-8 flex justify-between items-center border-b border-gray-200">
+
+        <!-- hamburger & logo -->
+        <div class="flex items-center gap-4">
+            <button id="hamburger-btn" class="flex flex-col gap-1.5 z-50">
+                <span class="block w-6 h-0.5 bg-black transition-all"></span>
+                <span class="block w-6 h-0.5 bg-black transition-all"></span>
+                <span class="block w-6 h-0.5 bg-black transition-all"></span>
+            </button>
+            
+            <img class="h-6" src="./public-1/logo.svg" alt="Sneakers Logo">
+        </div>
+
+        <!-- Nav -->
+        <nav class="hidden md:flex gap-8">
+            <a href="" class="text-gray-500 hover:text-black border-b-2 border-transparent hover:border-yellow-500 pb-1">Collections</a>
+            <a href="" class="text-gray-500 hover:text-black border-b-2 border-transparent hover:border-yellow-500 pb-1">Men</a>
+            <a href="" class="text-gray-500 hover:text-black border-b-2 border-transparent hover:border-yellow-500 pb-1">Women</a>
+            <a href="" class="text-gray-500 hover:text-black border-b-2 border-transparent hover:border-yellow-500 pb-1">About</a>
+            <a href="" class="text-gray-500 hover:text-black border-b-2 border-transparent hover:border-yellow-500 pb-1">Contact</a>
+        </nav>
+
+        <!-- cart & profile -->
+        <div class="flex items-center gap-4">
+            <button>
+                <img class="w-6 h-6 object-contain" src="./public-1/Screenshot 2026-05-16 at 01.03.45.png" alt="Cart">
+            </button>
+            <button>
+                <img class="w-9 h-9 rounded-full object-cover border-2 border-transparent hover:border-yellow-500" src="./me.png" alt="Profile">
+            </button>
+        </div>
+
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col gap-8 p-10 pt-24">
+        <a href="" class="text-2xl font-bold text-black hover:text-yellow-500">Collections</a>
+        <a href="" class="text-2xl font-bold text-black hover:text-yellow-500">Men</a>
+        <a href="" class="text-2xl font-bold text-black hover:text-yellow-500">Women</a>
+        <a href="" class="text-2xl font-bold text-black hover:text-yellow-500">About</a>
+        <a href="" class="text-2xl font-bold text-black hover:text-yellow-500">Contact</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 overflow-y-auto md:overflow-hidden">
+
+        <!-- mobile layout: stacked -->
+        <div class="md:hidden">
+            <img
+                src="./public-1/image-product-1.jpg"
+                alt="Main shoe"
+                class="w-full object-cover"
+            >
+          
+            <div class="grid grid-cols-4 gap-3 px-4 mt-4">
+                <img src="./public-1/image-product-1.jpg" alt="thumb 1" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                <img src="./public-1/image-product-2.jpg" alt="thumb 2" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                <img src="./public-1/image-product-3.jpg" alt="thumb 3" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                <img src="./public-1/image-product-4.jpg" alt="thumb 4" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+            </div>
+            
+            <div class="px-6 py-6 flex flex-col gap-4">
+                <p class="text-yellow-500 font-bold uppercase tracking-widest text-3xl">Sneaker Company</p>
+                <h1 class="text-3xl font-black leading-tight">Fall Limited Edition Sneakers</h1>
+                <p class="text-gray-500 text-sm">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole. They'll withstand everything the weather can offer.</p>
+                <div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-2xl font-bold">$125.00</span>
+                        <span class="bg-yellow-100 text-yellow-600 font-bold px-2 py-1 rounded text-sm">50%</span>
+                    </div>
+                    <p class="text-gray-400 line-through text-sm">$250.00</p>
+                </div>
+                <div class="flex flex-col gap-3 mt-2">
+                    <div class="flex items-center justify-between bg-gray-100 px-6 py-3 rounded-xl">
+                        <button class="text-yellow-500 font-bold text-xl">−</button>
+                        <span class="font-bold">15</span>
+                        <button class="text-yellow-500 font-bold text-xl">+</button>
+                    </div>
+                    <button class="w-full bg-yellow-500 text-white font-bold py-3 rounded-xl hover:bg-yellow-400">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- desktop layouet -->
+        <div class="hidden md:grid grid-cols-2 gap-16 h-full container mx-auto px-10 py-10">
+
+         
+            <div class="flex flex-col gap-4">
+                <img
+                    src="./public-1/image-product-1.jpg"
+                    alt="Main shoe"
+                    class="w-full rounded-2xl object-cover flex-1 max-h-96"
+                >
+                <div class="grid grid-cols-4 gap-4">
+                    <img src="./public-1/image-product-1.jpg" alt="thumb 1" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                    <img src="./public-1/image-product-2.jpg" alt="thumb 2" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                    <img src="./public-1/image-product-3.jpg" alt="thumb 3" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                    <img src="./public-1/image-product-4.jpg" alt="thumb 4" class="rounded-xl object-cover cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                </div>
+            </div>
+
+          
+            <div class="flex flex-col justify-center gap-6 px-8">
+                <p class="text-yellow-500 font-bold uppercase tracking-widest text-sm">Sneaker Company</p>
+                <h1 class="text-5xl font-black leading-tight">Fall Limited Edition Sneakers</h1>
+                <p class="text-gray-500">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole. They'll withstand everything the weather can offer.</p>
+                <div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-2xl font-bold">$125.00</span>
+                        <span class="bg-yellow-100 text-yellow-600 font-bold px-2 py-1 rounded">50%</span>
+                    </div>
+                    <p class="text-gray-400 line-through">$250.00</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-6 bg-gray-100 px-6 py-3 rounded-xl">
+                        <button class="text-yellow-500 font-bold text-xl">−</button>
+                        <span class="font-bold">15</span>
+                        <button class="text-yellow-500 font-bold text-xl">+</button>
+                    </div>
+                    <button class=" group relative flex-1 items-center justify-center overflow-hidden bg-yellow-500 text-white font-bold py-3 rounded-xl transition-all duration-300 hover:bg-yellow-400">
+                        <span class="transition-all duration-300 group-hover:mr-2">Add To Cart</span>
+                        <span class="transform -translate-x-3 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">✔︎</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const btn = document.getElementById('hamburger-btn')
+        const menu = document.getElementById('mobile-menu')
+        let isOpen = false
+
+        btn.addEventListener('click', () => {
+            isOpen = !isOpen
+            if (isOpen) {
+                menu.classList.remove('hidden')
+                menu.classList.add('flex')
+            } else {
+                menu.classList.add('hidden')
+                menu.classList.remove('flex')
+            }
+        })
+
+        // Close menu when a link is clicked
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden')
+                menu.classList.remove('flex')
+                isOpen = false
+            })
+        })
+    </script>
+
+</body>
+</html>
